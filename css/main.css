@@ -1,0 +1,37 @@
+:root{
+    --bg-main:#9361F5;
+    --bg-sec:#AC87F6;
+    --icon-color:#63E8D5;
+    --shadow:#9261f5a8;
+}
+.bg-main{
+    background-color: var(--bg-main);
+}
+.bg-sec{
+    background-color: var(--bg-sec);
+    border: 1px solid #fff;
+}
+.icon-color{
+    color: var(--icon-color);
+}
+.poiner{
+    cursor: pointer;
+}
+.poiner:focus{
+    color: var(--bg-main);
+    background-color: #fff;
+}
+.add-todo .btn{
+    background-color: var(--bg-main);
+    color: #fff;
+}
+.add-todo .btn:hover {
+    color: white;
+    background-color: var(--bg-main);
+    border-color: var(--bg-main);
+}
+.form-control:focus {
+    border-color: var(--bg-main ) !important;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem var(--shadow) !important;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    
+</head>
+
+<body>
+    <section class="bg-main">
+        <div class="container w-50">
+            <div class="row ">
+                <div class="bg-sec  my-3 rounded-2 px-3 py-4 ">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h2>Todo App</h2>
+                            <p>Keep it up!</p>
+                        </div>
+                        <div class="rounded-circle bg-main border text-white  p-3 ">
+                            <span id="mins-num">2</span>/<span id="Add-num">5</span>
+                        </div>
+                    </div>
+
+                    <div class="progress w-75" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="d-flex add-todo  flex-row p-4 bg-white rounded-2 my-3">
+                    <input type="text" class="w-50  form-control " id="Data" placeholder="taske to be done...">
+                    <button id="ADD" class="ms-auto btn px-lg-5">Add</button>
+                </div>
+                <div class="bg-white my-5 rounded-2" id="NewRow">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
