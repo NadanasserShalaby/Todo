@@ -16,6 +16,7 @@ addBtn.addEventListener('click', function () {
   // }
   clear();
 })
+let doneTask = 0
 
 async function addtodo() {
   const todo =
@@ -44,6 +45,7 @@ async function addtodo() {
 
     }
   }
+ 
 }
 async function getAllTodo() {
   const response = await fetch(`https://todos.routemisr.com/api/v1/todos/${apiKey}`);
@@ -59,6 +61,7 @@ async function getAllTodo() {
     }
 
   }
+ 
 }
 
 async function addToDoBut() {
@@ -76,9 +79,15 @@ async function addToDoBut() {
         </div>
         `;
   }
+  doneTask =0;
+  for (var i = 0; i < toDoContainer.length; i++) {
+    if (toDoContainer[i].completed ){
+      doneTask +=1;
+    }
+  }
   document.getElementById("NewRow").innerHTML = cartona;
   document.getElementById("Add-num").innerHTML = toDoContainer.length;
-  // document.getElementById("mins-num").innerHTML = length(toDoContainer.completed);
+  document.getElementById("mins-num").innerHTML = doneTask;
 }
 
 function clear() {
@@ -124,8 +133,12 @@ async function deleteed(hamada) {
       }
     }
   });
-
-
+  doneTask =0;
+  for (var i = 0; i < toDoContainer.length; i++) {
+    if (toDoContainer[i].completed ){
+      doneTask +=1;
+    }
+  }
 
 }
 async function markCompleted(idComplete) {
@@ -170,7 +183,6 @@ async function markCompleted(idComplete) {
         }
         console.log(data);
       }
-
     }
   });
 
